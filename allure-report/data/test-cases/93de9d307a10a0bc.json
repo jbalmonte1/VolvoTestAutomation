@@ -1,0 +1,146 @@
+{
+  "uid" : "93de9d307a10a0bc",
+  "name" : "should show side nav container when side nav button is clicked",
+  "fullName" : "TC0001 - Navigation Top Bar Verification.should show side nav container when side nav button is clicked",
+  "historyId" : "793e35132f56882b0caaee0544b9fe1f",
+  "time" : {
+    "start" : 1634700662142,
+    "stop" : 1634700662157,
+    "duration" : 15
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/window/maximize",
+      "time" : {
+        "start" : 1634700662142,
+        "stop" : 0,
+        "duration" : -1634700662142
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "POST /session/:sessionId/element",
+        "time" : {
+          "start" : 1634700662144,
+          "stop" : 0,
+          "duration" : -1634700662144
+        },
+        "status" : "unknown",
+        "steps" : [ {
+          "name" : "POST /session/:sessionId/element",
+          "time" : {
+            "start" : 1634700662153,
+            "stop" : 0,
+            "duration" : -1634700662153
+          },
+          "status" : "unknown",
+          "steps" : [ {
+            "name" : "POST /session/:sessionId/element",
+            "time" : {
+              "start" : 1634700662154,
+              "stop" : 0,
+              "duration" : -1634700662154
+            },
+            "status" : "unknown",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "ccdc41c413cb4ec0",
+              "name" : "Request",
+              "source" : "ccdc41c413cb4ec0.json",
+              "type" : "application/json",
+              "size" : 73
+            } ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ {
+            "uid" : "7afe5ed0c0d0b7b8",
+            "name" : "Request",
+            "source" : "7afe5ed0c0d0b7b8.json",
+            "type" : "application/json",
+            "size" : 136
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "e3c5982b1ded4f87",
+          "name" : "Request",
+          "source" : "e3c5982b1ded4f87.json",
+          "type" : "application/json",
+          "size" : 73
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "TC0001 - Navigation Top Bar Verification"
+  }, {
+    "name" : "testClass",
+    "value" : "TC0001 - Navigation Top Bar Verification"
+  }, {
+    "name" : "testMethod",
+    "value" : "should show side nav container when side nav button is clicked"
+  }, {
+    "name" : "package",
+    "value" : "TC0001 - Navigation Top Bar Verification"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-94.0.4606.81"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "93de9d307a10a0bc.json",
+  "parameterValues" : [ "chrome-94.0.4606.81" ]
+}

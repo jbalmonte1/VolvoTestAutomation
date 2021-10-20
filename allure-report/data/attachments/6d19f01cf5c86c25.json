@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "$div.optanon-alert-box-body p#alert-box-message"
+}

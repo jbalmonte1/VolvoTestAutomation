@@ -1,0 +1,146 @@
+{
+  "uid" : "dfec1268dcb8225d",
+  "name" : "should show cars container when Our Cars text is clicked",
+  "fullName" : "TC0001 - Navigation Top Bar Verification.should show cars container when Our Cars text is clicked",
+  "historyId" : "6d5b1c6fbbda1006b1292d0d7ac3c42a",
+  "time" : {
+    "start" : 1634700662120,
+    "stop" : 1634700662141,
+    "duration" : 21
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/window/maximize",
+      "time" : {
+        "start" : 1634700662120,
+        "stop" : 0,
+        "duration" : -1634700662120
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "POST /session/:sessionId/element",
+        "time" : {
+          "start" : 1634700662125,
+          "stop" : 0,
+          "duration" : -1634700662125
+        },
+        "status" : "unknown",
+        "steps" : [ {
+          "name" : "POST /session/:sessionId/element",
+          "time" : {
+            "start" : 1634700662128,
+            "stop" : 0,
+            "duration" : -1634700662128
+          },
+          "status" : "unknown",
+          "steps" : [ {
+            "name" : "POST /session/:sessionId/element",
+            "time" : {
+              "start" : 1634700662135,
+              "stop" : 0,
+              "duration" : -1634700662135
+            },
+            "status" : "unknown",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "addee1567a1eb8b3",
+              "name" : "Request",
+              "source" : "addee1567a1eb8b3.json",
+              "type" : "application/json",
+              "size" : 86
+            } ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ {
+            "uid" : "3e82742537c2d154",
+            "name" : "Request",
+            "source" : "3e82742537c2d154.json",
+            "type" : "application/json",
+            "size" : 106
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "4816c3d11fc4b007",
+          "name" : "Request",
+          "source" : "4816c3d11fc4b007.json",
+          "type" : "application/json",
+          "size" : 86
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "TC0001 - Navigation Top Bar Verification"
+  }, {
+    "name" : "testClass",
+    "value" : "TC0001 - Navigation Top Bar Verification"
+  }, {
+    "name" : "testMethod",
+    "value" : "should show cars container when Our Cars text is clicked"
+  }, {
+    "name" : "package",
+    "value" : "TC0001 - Navigation Top Bar Verification"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-94.0.4606.81"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dfec1268dcb8225d.json",
+  "parameterValues" : [ "chrome-94.0.4606.81" ]
+}
