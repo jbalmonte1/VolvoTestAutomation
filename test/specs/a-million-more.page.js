@@ -34,25 +34,28 @@ const mainBodyIconCalloutsFooterText = 'Features depicted may not be standard or
 const mainBodyVideoTestimonialsHeaderText = 'One of a million';
 const mainBodyVideoTestimonialsDescriptionText = 'Hear the stories from real car crash survivors and see how they\'ve managed to turn an accident into a positive change in their lives.';
 
-const mainBodyVideoTestimonialsAmyVideoSrcAttribute = 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_amy_4x5_clean.mp4';
-const mainBodyVideoTestimonialsAmyVideoTypeAttribute = 'video/mp4';
-const mainBodyVideoTestimonialsAmyTitleText = 'Amy';
-const mainBodyVideoTestimonialsAmyDescriptionText = 'Meet Amy Ma, who survived a multi-vehicle collision thanks to the safety belt.';
-
-const mainBodyVideoTestimonialsSummerVideoSrcAttribute = 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_summer_4x5_clean.mp4';
-const mainBodyVideoTestimonialsSummerVideoTypeAttribute = 'video/mp4';
-const mainBodyVideoTestimonialsSummerTitleText = 'Summer';
-const mainBodyVideoTestimonialsSummerDescriptionText = 'Hear Summer talk about the collision that destroyed her car, but spared her life thanks to the safety belt.';
-
-const mainBodyVideoTestimonialsLindaAndMollyVideoSrcAttribute = 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_molly_linda_4x5_200915_clean.mp4';
-const mainBodyVideoTestimonialsLindaAndMollyVideoTypeAttribute = 'video/mp4';
-const mainBodyVideoTestimonialsLindaAndMollyTitleText = 'Linda & Molly';
-const mainBodyVideoTestimonialsLindaAndMollyDescriptionText = 'If it wasn\'t for the safety belt, Linda & Molly\'s trip to a ski resort could\'ve been their last.';
-
-const mainBodyVideoTestimonialsAlexVideoSrcAttribute = 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_alex_4x5_clean.mp4';
-const mainBodyVideoTestimonialsAlexVideoTypeAttribute = 'video/mp4';
-const mainBodyVideoTestimonialsAlexTitleText = 'Alex';
-const mainBodyVideoTestimonialsAlexDescriptionText = 'Alex talks about the collision that nearly took his life, but since he was wearing a safety belt only left him with a scar.';
+const mainBodyVideoTestimonials = [
+	{'TitleText': 'Amy',
+	  'VideoSrcAttribute': 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_amy_4x5_clean.mp4',
+	  'VideoTypeAttribute': 'video/mp4',
+	  'DescriptionText': 'Meet Amy Ma, who survived a multi-vehicle collision thanks to the safety belt.'
+	},
+	{'TitleText': 'Summer',
+	  'VideoSrcAttribute': 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_summer_4x5_clean.mp4',
+	  'VideoTypeAttribute': 'video/mp4',
+	  'DescriptionText': 'Hear Summer talk about the collision that destroyed her car, but spared her life thanks to the safety belt.'
+	},
+	{'TitleText': 'LindaAndMolly',
+	  'VideoSrcAttribute': 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_molly_linda_4x5_200915_clean.mp4',
+	  'VideoTypeAttribute': 'video/mp4',
+	  'DescriptionText': 'If it wasn\'t for the safety belt, Linda & Molly\'s trip to a ski resort could\'ve been their last.'
+	},
+	{'TitleText': 'Alex',
+	  'VideoSrcAttribute': 'https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/campaigns/amm_id_alex_4x5_clean.mp4',
+	  'VideoTypeAttribute': 'video/mp4',
+	  'DescriptionText': 'Alex talks about the collision that nearly took his life, but since he was wearing a safety belt only left him with a scar.'
+	}
+];
 
 const mainBodyDecadesOfInnovationSectionTitleText = 'Decades of innovation';
 const mainBodyDecadesOfInnovationSectionDescriptionText = 'Ever since our founding in 1927, we\'ve been designing cars that put people first. Discover our most important safety innovations over the years.';
@@ -170,7 +173,7 @@ describe('TC0001 - Main Page Loading and Cookie Container Verification', () => {
 	});
 });
 
-describe.skip('TC0002 - Navigation Top Bar Verification', () => {
+describe('TC0002 - Navigation Top Bar Verification', () => {
 	beforeEach (async () => {
 		await aMillionMorePage.open();
 	});
@@ -195,19 +198,26 @@ describe.skip('TC0002 - Navigation Top Bar Verification', () => {
 	});
 });
 
-describe('TC0003 - Main Page Element Verification', () => {
+describe('TC0003 - Main Page Element Verification - Model Intro', () => {
 	beforeEach (async () => {
 		await aMillionMorePage.open();
 	});
 	
-	it.skip('3.1 should show and verify the model intro header and text', async () => {
+	it('3.1 should show and verify the model intro header and text', async () => {
 		await expect(aMillionMorePage.mainBodyModelIntoHeader).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyModelIntoHeader).toHaveText(mainBodyModelIntroHeaderText);
 		await expect(aMillionMorePage.mainBodyModelIntoDescription).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyModelIntoDescription).toHaveText(mainBodyModelIntroDescriptionText);
 	});
+
+});
+
+describe('TC0004 - Main Page Element Verification - Main Video', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
+	});
 	
-	it.skip('3.2 should show and verify the main video if autoplayed and points to correct playback source', async () => {
+	it('4.1 should show and verify the main video if autoplayed and points to correct playback source', async () => {
 		await expect(aMillionMorePage.mainBodyVideo).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyVideo).toHaveAttribute('preload', mainBodyVideoPreloadAttribute);
 		await expect(aMillionMorePage.mainBodyVideoSrc).toHaveAttribute('src', mainBodyVideoSrcAttribute);
@@ -216,64 +226,97 @@ describe('TC0003 - Main Page Element Verification', () => {
 		await expect(aMillionMorePage.mainBodyVideoWatchTheStoryButton).toBeDisplayed();
 	});
 	
-	it.skip('3.3 should show and verify the text statement', async () => {
+});
+
+describe('TC0005 - Main Page Element Verification - Text Statement', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
+	});
+	
+	it('5.1 should show and verify the text statement', async () => {
 		await expect(aMillionMorePage.mainBodyTextStatement).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyTextStatement).toHaveText(mainBodyTextStatementText);
 	});
-	
-	it.skip('3.4 should show and verify the icon callouts icon visibility, title value, and text value', async () => {
+});
+
+describe('TC0006 - Main Page Element Verification - Icon Callouts', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
 		await aMillionMorePage.mainBodyIconCalloutsContainer.scrollIntoView();
-	
+	});
+		
+	it('6.1 should show and verify the speed cap icon callouts icon visibility, title value, and text value', async () => {
 		await expect(aMillionMorePage.mainBodyIconCalloutsSpeedCapIcon).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsSpeedCapTitle).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsSpeedCapTitle).toHaveText(mainBodyIconCalloutsSpeedCapTitleText);
 		await expect(aMillionMorePage.mainBodyIconCalloutsSpeedCapDescription).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsSpeedCapDescription).toHaveText(mainBodyIconCalloutsSpeedCapDescriptionText);
-		
+	});
+	
+	it('6.2 should show and verify the highway pilot icon callouts icon visibility, title value, and text value', async () => {
 		await expect(aMillionMorePage.mainBodyIconCalloutsHighwayPilotIcon).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsHighwayPilotTitle).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsHighwayPilotTitle).toHaveText(mainBodyIconCalloutsHighwayPilotTitleText);
 		await expect(aMillionMorePage.mainBodyIconCalloutsHighwayPilotDescription).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsHighwayPilotDescription).toHaveText(mainBodyIconCalloutsHighwayPilotDescriptionText);
-		
+	});
+	
+	it('6.3 should show and verify the driver monitoring cameras icon callouts icon visibility, title value, and text value', async () => {
 		await expect(aMillionMorePage.mainBodyIconCalloutsDriverMonitoringCamerasIcon).toBeDisplayed();	
 		await expect(aMillionMorePage.mainBodyIconCalloutsDriverMonitoringCamerasTitle).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsDriverMonitoringCamerasTitle).toHaveText(mainBodyIconCalloutsDriverMonitoringCamerasTitleText);		
 		await expect(aMillionMorePage.mainBodyIconCalloutsDriverMonitoringCamerasDescription).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsDriverMonitoringCamerasDescription).toHaveText(mainBodyIconCalloutsDriverMonitoringCamerasDescriptionText);
-		
+	});
+	
+	it('6.4 should show and verify the care key icon callouts icon visibility, title value, and text value', async () => {
 		await expect(aMillionMorePage.mainBodyIconCalloutsCareKeyIcon).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsCareKeyTitle).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsCareKeyTitle).toHaveText(mainBodyIconCalloutsCareKeyTitleText);
 		await expect(aMillionMorePage.mainBodyIconCalloutsCareKeyDescription).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsCareKeyDescription).toHaveText(mainBodyIconCalloutsCareKeyDescriptionText);
-		
+	});
+	
+	it('6.5 should show and verify the learn more about safety text field', async () => {
 		await expect(aMillionMorePage.mainBodyIconCalloutsLearnMoreAboutCarSafetyTitle).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsLearnMoreAboutCarSafetyTitle).toHaveText(mainBodyIconCalloutsLearnMoreAboutCarSafetyTitleText);
 		await expect(aMillionMorePage.mainBodyIconCalloutsLearnMoreAboutCarSafetyTitle).toHaveAttribute('href', mainBodyIconCalloutsLearnMoreAboutCarSafetyTitleHrefAttribute);
-		
+	});
+	
+	it('6.6 should show and verify the icon callouts footer', async () => {
 		await expect(aMillionMorePage.mainBodyIconCalloutsFooter).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyIconCalloutsFooter).toHaveText(mainBodyIconCalloutsFooterText);
 	});
 	
-	it.skip('3.5 should show and verify the video testimonials elements and points to the correct playback source', async () => {
+});
+
+describe('TC0007 - Main Page Element Verification - Video Testimonials', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
 		await aMillionMorePage.mainBodyVideoTestimonialsContainer.scrollIntoView();
-		
+	});
+	
+	it('7.1 should show and verify the video testimonials header and description', async () => {
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsHeader).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsHeader).toHaveText(mainBodyVideoTestimonialsHeaderText);
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsDescription).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsDescription).toHaveText(mainBodyVideoTestimonialsDescriptionText);
+	});
+	
+	it('7.2 should show and verify the video testimonials video, source, play button, title, and description', async () => {
+		for (let index = 0; index < mainBodyVideoTestimonials.length; index++) {
+			await $(aMillionMorePage.mainBodyVideoTestimonialsContainer.replace('__INDEX__', index + 1)).scrollIntoView();
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyVideo.replace('__INDEX__', index + 1))).toBeDisplayed();
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyVideoSrc.replace('__INDEX__', index + 1))).toHaveAttribute('src', mainBodyVideoTestimonials[index]['VideoSrcAttribute']);
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyVideoSrc.replace('__INDEX__', index + 1))).toHaveAttribute('type', mainBodyVideoTestimonials[index]['VideoTypeAttribute']);
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyVideoPlayBtn.replace('__INDEX__', index + 1))).toBeDisplayed();
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyTitle.replace('__INDEX__', index + 1))).toBeDisplayed();
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyTitle.replace('__INDEX__', index + 1))).toHaveText(mainBodyVideoTestimonials[index]['TitleText']);
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyDescription.replace('__INDEX__', index + 1))).toBeDisplayed();
+			await expect($(aMillionMorePage.mainBodyVideoTestimonialsAmyDescription.replace('__INDEX__', index + 1))).toHaveText(mainBodyVideoTestimonials[index]['DescriptionText']);
+		}
 		
-		await aMillionMorePage.mainBodyVideoTestimonialsAmyContainer.scrollIntoView();
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyVideo).toBeDisplayed();
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyVideoSrc).toHaveAttribute('src', mainBodyVideoTestimonialsAmyVideoSrcAttribute);
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyVideoSrc).toHaveAttribute('type', mainBodyVideoTestimonialsAmyVideoTypeAttribute);
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyVideoPlayBtn).toBeDisplayed();
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyTitle).toBeDisplayed();
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyTitle).toHaveText(mainBodyVideoTestimonialsAmyTitleText);
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyDescription).toBeDisplayed();
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAmyDescription).toHaveText(mainBodyVideoTestimonialsAmyDescriptionText);
-		
+		/*		
 		await aMillionMorePage.mainBodyVideoTestimonialsSummerContainer.scrollIntoView();
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsSummerVideo).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsSummerVideoSrc).toHaveAttribute('src', mainBodyVideoTestimonialsSummerVideoSrcAttribute);
@@ -302,34 +345,52 @@ describe('TC0003 - Main Page Element Verification', () => {
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsAlexTitle).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsAlexTitle).toHaveText(mainBodyVideoTestimonialsAlexTitleText);
 		await expect(aMillionMorePage.mainBodyVideoTestimonialsAlexDescription).toBeDisplayed();
-		await expect(aMillionMorePage.mainBodyVideoTestimonialsAlexDescription).toHaveText(mainBodyVideoTestimonialsAlexDescriptionText);
+		await expect(aMillionMorePage.mainBodyVideoTestimonialsAlexDescription).toHaveText(mainBodyVideoTestimonialsAlexDescriptionText);*/
+	});
+});
+
+describe('TC0008 - Main Page Element Verification - Decades Of Innovation Section', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
+		await aMillionMorePage.mainBodyDecadesOfInnovationSectionContainer.scrollIntoView();
 	});
 	
-	it.skip('3.6 should show and verify the decades of innovation section elements', async () => {
-		await aMillionMorePage.mainBodyDecadesOfInnovationSectionContainer.scrollIntoView();
-		
+	it('8.1 should show and verify the decades of innovation section title and description', async () => {		
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionTitle).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionTitle).toHaveText(mainBodyDecadesOfInnovationSectionTitleText);
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionDescription).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionDescription).toHaveText(mainBodyDecadesOfInnovationSectionDescriptionText);
-		
+	});
+	
+	it('8.2 should show and verify the decades of innovation section learn more button', async () => {		
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionLearnMoreBtn).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionLearnMoreBtn).toHaveText(mainBodyDecadesOfInnovationSectionLearnMoreBtnText);
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionLearnMoreBtn).toHaveAttribute('href', mainBodyDecadesOfInnovationSectionLearnMoreBtnHrefAttribute);
-		
+	});
+	
+	it('8.3 should show and verify the decades of innovation section image', async () => {		
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionImg).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyDecadesOfInnovationSectionImg).toHaveAttribute('src', mainBodyDecadesOfInnovationSectionImgSrcAttribute);
 	});
-	
-	it('3.7 should show and verify the product list carousel elements', async () => {
+});
+
+describe('TC0009 - Main Page Element Verification - Product List Carousel', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
 		await aMillionMorePage.mainBodyProductListCarouselContainer.scrollIntoView();
-		
+	});
+	
+	it('9.1 should show and verify the product list carousel header', async () => {
 		await expect(aMillionMorePage.mainBodyProductListCarouselContainerHeader).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyProductListCarouselContainerHeader).toHaveText(mainBodyProductListCarouselContainerHeaderText);
-		
+	});	
+	
+	it('9.2 should show and verify the product list carousel pagination buttons', async () => {
 		await expect(aMillionMorePage.mainBodyProductListCarouselPreviousBtn).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyProductListCarouselNextBtn).toBeDisplayed();
-		
+	});
+	
+	it('9.3 should show and verify the product list carousel items', async () => {
 		for (let index = 0; index < mainBodyProductListCarouselCarModels.length; index++) {
 			await expect($(aMillionMorePage.mainBodyProductListCarouselItemContainer.replace('__INDEX__', index))).toBeExisting();
 			await expect($(aMillionMorePage.mainBodyProductListCarouselItemContainer.replace('__INDEX__', index))).toHaveAttribute('href', mainBodyProductListCarouselCarModels[index]['ViewHref']);
@@ -355,34 +416,50 @@ describe('TC0003 - Main Page Element Verification', () => {
 			
 			await aMillionMorePage.viewNextItemInProductCarousel();
 		}
-		
+	});
+	
+	it('9.4 should show and verify the product list carousel recharge button', async () => {
 		await expect(aMillionMorePage.mainBodyProductListCarouselRechargeBtn).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyProductListCarouselRechargeBtn).toHaveText(mainBodyProductListCarouselRechargeBtnText);
 		await expect(aMillionMorePage.mainBodyProductListCarouselRechargeBtn).toHaveAttribute('href', mainBodyProductListCarouselRechargeBtnHrefAttribute);
-		
+	});
+	
+	it('9.5 should show and verify the product list carousel mild hybrid cars button', async () => {
 		await expect(aMillionMorePage.mainBodyProductListCarouselMildHybridCarsBtn).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodyProductListCarouselMildHybridCarsBtn).toHaveText(mainBodyProductListCarouselMildHybridCarsBtnText);
 		await expect(aMillionMorePage.mainBodyProductListCarouselMildHybridCarsBtn).toHaveAttribute('href', mainBodyProductListCarouselMildHybridCarsBtnHrefAttribute);
 	});
-	
-	it.skip('3.8 should show and verify the disclaimer text', async () => {
+});
+
+describe('TC0010 - Main Page Element Verification - Disclaimer', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
 		await aMillionMorePage.mainBodyDisclaimerContainer.scrollIntoView();
-		
+	});	
+	
+	it('10.1 should show and verify the disclaimer text and description', async () => {
 		for (let index = 0; index < mainBodyDisclaimerDescriptionText.length; index++) {
 			await expect($(aMillionMorePage.mainBodyDisclaimerDescription.replace('__INDEX__', index + 1))).toBeDisplayed();
 			await expect($(aMillionMorePage.mainBodyDisclaimerDescription.replace('__INDEX__', index + 1))).toHaveText(mainBodyDisclaimerDescriptionText[index]);
 		}
 	});
-	
-	it('3.9 should show and verify the site footer text and hyperlinks as well as the site footer copyright', async () => {
+});
+
+describe('TC0011 - Main Page Element Verification - Site Footer', () => {
+	beforeEach (async () => {
+		await aMillionMorePage.open();
 		await aMillionMorePage.mainBodySiteFooterContainer.scrollIntoView();
-		
+	});
+	
+	it('11.1 should show and verify the site footer text and hyperlinks', async () => {
 		for (let index = 0; index < mainBodySiteFooterItems.length; index++) {
 			await expect($(aMillionMorePage.mainBodySiteFooterItem.replace('__INDEX__', index + 1))).toBeDisplayed();
 			await expect($(aMillionMorePage.mainBodySiteFooterItem.replace('__INDEX__', index + 1))).toHaveText(mainBodySiteFooterItems[index]['Name']);
 			await expect($(aMillionMorePage.mainBodySiteFooterItem.replace('__INDEX__', index + 1))).toHaveAttribute('href', mainBodySiteFooterItems[index]['Href']);
 		}
-		
+	});
+
+	it('11.2 should show and verify the site footer copyright', async () => {		
 		await expect(aMillionMorePage.mainBodySiteFooterCopyright).toBeDisplayed();
 		await expect(aMillionMorePage.mainBodySiteFooterCopyright).toHaveText(mainBodySiteFooterCopyrightText);
 	});

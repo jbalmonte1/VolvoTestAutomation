@@ -82,6 +82,13 @@ class aMillionMorePage extends Page {
     get mainBodyVideoTestimonialsHeader () { return $('//div[@data-component="VideoTestimonials"]//h2'); }
     get mainBodyVideoTestimonialsDescription () { return $('//div[@data-component="VideoTestimonials"]//h2/following-sibling::p'); }
     
+    get mainBodyVideoTestimonialsContainer () { return $('//div[@data-autoid="videoTestimonials:container"][__INDEX__]'); }
+    get mainBodyVideoTestimonialsVideo () { return $('//div[@data-autoid="videoTestimonials:container"][__INDEX__]//video'); }
+    get mainBodyVideoTestimonialsVideoSrc () { return $('//div[@data-autoid="videoTestimonials:container"][__INDEX__]//video/source'); }
+    get mainBodyVideoTestimonialsVideoPlayBtn () { return $('//div[@data-autoid="videoTestimonials:container"][__INDEX__]//button'); }
+    get mainBodyVideoTestimonialsTitle () { return $('//div[@data-autoid="videoTestimonials:container"][__INDEX__]//em'); }
+    get mainBodyVideoTestimonialsDescription () { return $('//div[@data-autoid="videoTestimonials:container"][__INDEX__]//p'); }
+    
     get mainBodyVideoTestimonialsAmyContainer () { return $('//div[@data-autoid="videoTestimonials:container"][1]'); }
     get mainBodyVideoTestimonialsAmyVideo () { return $('//div[@data-autoid="videoTestimonials:container"][1]//video'); }
     get mainBodyVideoTestimonialsAmyVideoSrc () { return $('//div[@data-autoid="videoTestimonials:container"][1]//video/source'); }
