@@ -40,7 +40,8 @@ This framework contains configuration files, page objects, test data, test cases
    4. [node modules] - contains cached dependency resources used for test execution
    5. [package*.json] - contains metadata including list of library/package dependencies required for test execution
    6. [wdio.conf.js] - configuration file used for test execution including runner and test configurations, capabilities, and hooks
-   7. [run.sh] - shell script used for test execution and automatic allure report cleanup and generation
+   7. [Dockerfile] - contains script needed to generate docker image
+   8. [run.sh] - shell script used for test execution and automatic allure report cleanup and generation
 
 ---
 
