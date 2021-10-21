@@ -11,6 +11,7 @@ Test automation framework infrastructure for running automated tests in Volvo We
 - [Directory Structure](#directory-structure)
 - [Installation Requirements](#installation-requirements)
 - [Installation](#installation)
+- [Test Case List](#test-case-list)
 - [Test Case Execution](#test-case-execution)
 
 ---
@@ -63,7 +64,7 @@ This framework contains configuration files, page objects, test data, test cases
 
 ---
 
-### Test Case List
+## Test Case List
    1. TC0001 - Main Page Loading and Cookie Container Verification
       1. should verify url and title
       2. should show the cookies container and accept all cookies
@@ -107,7 +108,8 @@ This framework contains configuration files, page objects, test data, test cases
 
 ## Test Case Execution
    1. From the Project Directory
-```bash run.sh <Test Case ID/Name | if left empty will run all test cases>
+```
+   bash run.sh <Test Case ID/Name | if left empty will run all test cases>
    example: bash run.sh TC0001
 ```
 
