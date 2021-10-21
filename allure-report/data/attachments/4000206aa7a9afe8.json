@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@data-component=\"VideoTestimonials\"]//h2/following-sibling::p"
+}

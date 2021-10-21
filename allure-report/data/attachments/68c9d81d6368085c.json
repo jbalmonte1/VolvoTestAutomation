@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div[@data-component=\"ProductListCarousel\"]//a[@data-autoid=\"productListCarouselItem-2\"]/following-sibling::div//a[contains(@data-autoid, \"link2\")]"
-}

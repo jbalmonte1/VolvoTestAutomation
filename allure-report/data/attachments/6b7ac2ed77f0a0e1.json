@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@data-autoid=\"springCarouselNextButton\"]\"}\n  (Session info: headless chrome=95.0.4638.54)",
-  "stacktrace": "#0 0x557875f048f3 <unknown>\n#1 0x5578759e9ba8 <unknown>\n#2 0x557875a1f9b5 <unknown>\n#3 0x557875a52104 <unknown>\n#4 0x557875a3ce9d <unknown>\n#5 0x557875a4fdac <unknown>\n#6 0x557875a3cd63 <unknown>\n#7 0x557875a13144 <unknown>\n#8 0x557875a14135 <unknown>\n#9 0x557875f33c3e <unknown>\n#10 0x557875f496b7 <unknown>\n#11 0x557875f34b95 <unknown>\n#12 0x557875f4ab05 <unknown>\n#13 0x557875f292ab <unknown>\n#14 0x557875f65248 <unknown>\n#15 0x557875f653c8 <unknown>\n#16 0x557875f8033d <unknown>\n#17 0x7f7225e93609 start_thread\n"
-}

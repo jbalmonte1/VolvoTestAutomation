@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div[@data-component=\"ProductListCarousel\"]//h2"
-}
