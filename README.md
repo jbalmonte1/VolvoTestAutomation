@@ -110,21 +110,22 @@ This framework contains configuration files, page objects, test data, test cases
 ## Building Docker Image Using Dockerfile
    1. Make sure docker is installed and running (systemctl status docker)
    2. From the Project Directory
-   >  docker build -t <docker image name>:<version number> .
-   >  example: docker build -t volvotestautomation:v2.0 .
+   `docker build -t <docker image name>:<version number> .`
+   `example: docker build -t volvotestautomation:v2.0 .`  
    3. Check new image generated
-   >  docker images <docker image name>:<version number>
-   >  example: docker images volvotestautomation:v2.0
+   `docker images <docker image name>:<version number>`
+   `example: docker images volvotestautomation:v2.0`
+
 ---
 
 ## Test Case Execution
    1. Using shell script from Project Directory
-   >  bash run.sh <Test Case ID/Name | if left empty will run all test cases>
-   >  example: bash run.sh TC0001
+   `bash run.sh <Test Case ID/Name | if left empty will run all test cases>`
+   `example: bash run.sh TC0001`
    2. Using docker image generated (see #building-docker-image-using-dockerfile)
-   >  docker run -it <docker image name>:<version number> <Test Case ID/Name | if left empty will run all test cases>
-   >  example: docker run -it volvotestautomation:v1.7 TC0001
-
+   `docker run -it <docker image name>:<version number> <Test Case ID/Name | if left empty will run all test cases>`
+   `example: docker run -it volvotestautomation:v1.7 TC0001`
+   
 ---
 
 For more details Please see:
