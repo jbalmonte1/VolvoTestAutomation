@@ -1,35 +1,48 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "children" : [ {
-    "name" : "TC0011 - Main Page Element Verification - Site Footer",
+    "name" : "TC0002 - Navigation Top Bar Verification",
     "children" : [ {
-      "name" : "11.1 should show and verify the site footer text and hyperlinks",
-      "uid" : "53f9700bc7199e97",
-      "parentUid" : "8cb3c145891db1f837c5fa81ed211d1e",
+      "name" : "2.2 should show and verify the cars container when Our Cars text is clicked",
+      "uid" : "7c86db15c1738b7b",
+      "parentUid" : "d376cb7ef50d3ddca1c3c3f9469a4714",
       "status" : "passed",
       "time" : {
-        "start" : 1634789457916,
-        "stop" : 1634789511355,
-        "duration" : 53439
+        "start" : 1634796995053,
+        "stop" : 1634797025008,
+        "duration" : 29955
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome-94.0.4606.81" ]
     }, {
-      "name" : "11.2 should show and verify the site footer copyright",
-      "uid" : "bd0d8e0dfcf74783",
-      "parentUid" : "8cb3c145891db1f837c5fa81ed211d1e",
-      "status" : "passed",
+      "name" : "2.1 should show top navigation bar and elements",
+      "uid" : "3578fcff180af486",
+      "parentUid" : "d376cb7ef50d3ddca1c3c3f9469a4714",
+      "status" : "skipped",
       "time" : {
-        "start" : 1634789511357,
-        "stop" : 1634789512872,
-        "duration" : 1515
+        "start" : 1634796995053,
+        "stop" : 1634796995053,
+        "duration" : 0
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "chrome-94.0.4606.81" ]
+      "parameters" : [ ]
+    }, {
+      "name" : "2.3 should show and verify the side nav container when side nav button is clicked",
+      "uid" : "8c6022d3498d0f89",
+      "parentUid" : "d376cb7ef50d3ddca1c3c3f9469a4714",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1634797025009,
+        "stop" : 1634797025009,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
     } ],
-    "uid" : "8cb3c145891db1f837c5fa81ed211d1e"
+    "uid" : "d376cb7ef50d3ddca1c3c3f9469a4714"
   } ],
   "name" : "suites"
 }

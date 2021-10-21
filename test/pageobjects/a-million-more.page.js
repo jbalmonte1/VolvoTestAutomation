@@ -19,6 +19,7 @@ class aMillionMorePage extends Page {
     get navBar () { return $('//div[@id="site-nav-topbar-wrapper"]'); }
     get navBarHomeBtn () { return $('//div[@id="site-nav-topbar-wrapper"]//a'); }
     get navBarHomeBtnImg () { return $('//div[@id="site-nav-topbar-wrapper"]//img'); }
+    
     get navBarCarsContainerBtn () { return $('//em[@data-testid="nav:carsLabelContainer"]'); }
     get navBarSideNavBtn () { return $('//button[@id="sitenav-sidenav-toggle"]'); }
     
@@ -26,6 +27,13 @@ class aMillionMorePage extends Page {
      * These keywords return selectors for the cars menu desktop container
      */
     get navBarCarsContainerCarsMenuDesktopContainer () { return $('//div[@data-autoid="nav:carMenuDesktop"][@aria-hidden="false"]'); }
+    
+    get navBarCarsContainerCarsMenuDesktopSideButton () { return '//div[@data-autoid="nav:carMenuDesktop"]//button[__INDEX__]'; }
+    get navBarCarsContainerCarsMenuDesktopSideButtonHeader () { return '//div[@data-autoid="nav:carMenuDesktop"]//button[__INDEX__]/h2'; }
+    get navBarCarsContainerCarsMenuDesktopSideButtonDescription () { return '//div[@data-autoid="nav:carMenuDesktop"]//button[__INDEX__]/p'; }
+    
+    get navBarCarsContainerCarsMenuDesktopCarsListItemBtn () { return '//div[@data-autoid="nav:carMenuDesktop"]//div[@role="tabpanel"][__INDEX_1__]//div[@role="listitem"][__INDEX_2__]//a'; }
+    get navBarCarsContainerCarsMenuDesktopCarsListItemImg () { return '//div[@data-autoid="nav:carMenuDesktop"]//div[@role="tabpanel"][__INDEX_1__]//div[@role="listitem"][__INDEX_2__]//img'; }
     
     /**
      * These keywords return selectors for the side navigation container
@@ -163,6 +171,15 @@ class aMillionMorePage extends Page {
     async openCarsContainer () {
     	await this.navBarCarsContainerBtn.isDisplayed();
     	await this.navBarCarsContainerBtn.click();
+    }
+    
+    /**
+     * This keyword is used to navigate to a specific cars menu from cars menu desktop side panel
+     * @param selector to click to go to a cars menu
+     */
+    async viewCarsContainerFromCarsMenuDesktopSidePanel (selector) {
+    	await selector.isDisplayed();
+    	await selector.click();
     }
     
     /**
