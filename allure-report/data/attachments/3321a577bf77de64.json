@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class=\"optanon-alert-box-body\"]//p[@id=\"alert-box-message\"]"
+}

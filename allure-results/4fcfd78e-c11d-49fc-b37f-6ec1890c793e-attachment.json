@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@data-autoid=\"iconCallouts:iconTextItem\"]//*[@data-icon=\"camera2\"]/parent::div/following-sibling::div/em"
+}

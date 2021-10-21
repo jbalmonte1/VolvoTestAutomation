@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@data-component=\"Video\"]//div[@class=\"a cn\"]/button"
+}
