@@ -14,6 +14,7 @@ Test automation framework infrastructure for running automated tests in Volvo We
 - [Test Case List](#test-case-list)
 - [Building Docker Image Using Dockerfile](#building-docker-image-using-dockerfile)
 - [Test Case Execution](#test-case-execution)
+- [Test Reporting](test-reporting)
 
 ---
 
@@ -136,6 +137,18 @@ This framework contains configuration files, page objects, test data, test cases
 ```   
    
 ---
+
+## Test Reporting
+Reports are automatically generated using allure reporting.
+- When running tests using shell script, allure report is automatically opened in the default browser.
+- When running tests using docker image, an instruction to open allure report through a link (link may vary accordingly) is given at the end of the execution
+```
+   example: 
+   You can use the link below to open the report manually.
+   Server started at <http://172.17.0.2:33169/>.
+```
+
+--
 
 For more details Please see:
 - [WebdriverIO](https://webdriver.io/)
