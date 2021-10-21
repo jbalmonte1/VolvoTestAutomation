@@ -66,42 +66,42 @@ This framework contains configuration files, page objects, test data, test cases
 ---
 
 ## Test Case List
-   1. TC0001 - Main Page Loading and Cookie Container Verification
+   1. *TC0001 - Main Page Loading and Cookie Container Verification*
       1. should verify url and title
       2. should show the cookies container and accept all cookies
-   2. TC0002 - Navigation Top Bar Verification
+   2. *TC0002 - Navigation Top Bar Verification*
       1. should show top navigation bar and elements
       2. should show and verify the cars container when Our Cars text is clicked
       3. should show and verify the side nav container when side nav button is clicked
-   3. TC0003 - Main Page Element Verification - Model Intro
+   3. *TC0003 - Main Page Element Verification - Model Intro*
       1. should show and verify the model intro header and text
-   4. TC0004 - Main Page Element Verification - Main Video
+   4. *TC0004 - Main Page Element Verification - Main Video*
       1. should show and verify the main video if autoplayed and points to correct playback source
-   5. TC0005 - Main Page Element Verification - Text Statement
+   5. *TC0005 - Main Page Element Verification - Text Statement*
       1. should show and verify the text statement
-   6. TC0006 - Main Page Element Verification - Icon Callouts
+   6. *TC0006 - Main Page Element Verification - Icon Callouts*
       1. should show and verify the speed cap icon callouts icon visibility, title value, and text value
       2. should show and verify the highway pilot icon callouts icon visibility, title value, and text value
       3. should show and verify the driver monitoring cameras icon callouts icon visibility, title value, and text value
       4. should show and verify the care key icon callouts icon visibility, title value, and text value
       5. should show and verify the learn more about safety text field
       6. should show and verify the icon callouts footer
-   7. TC0007 - Main Page Element Verification - Video Testimonials
+   7. *TC0007 - Main Page Element Verification - Video Testimonials*
       1. should show and verify the video testimonials header and description
       2. should show and verify the video testimonials video, source, play button, title, and description
-   8. TC0008 - Main Page Element Verification - Decades Of Innovation Section
+   8. *TC0008 - Main Page Element Verification - Decades Of Innovation Section*
       1. should show and verify the decades of innovation section title and description
       2. should show and verify the decades of innovation section learn more button
       3. should show and verify the decades of innovation section image
-   9. TC0009 - Main Page Element Verification - Product List Carousel
+   9. *TC0009 - Main Page Element Verification - Product List Carousel*
       1. should show and verify the product list carousel header
       2. should show and verify the product list carousel pagination buttons
       3. should show and verify the product list carousel items
       4. should show and verify the product list carousel recharge button
       5. should show and verify the product list carousel mild hybrid cars button
-   10. TC0010 - Main Page Element Verification - Disclaimer
+   10. *TC0010 - Main Page Element Verification - Disclaimer*
        1. should show and verify the disclaimer text and description
-   11. TC0011 - Main Page Element Verification - Site Footer
+   11. *TC0011 - Main Page Element Verification - Site Footer*
        1. should show and verify the site footer text and hyperlinks
        2. should show and verify the site footer copyright
    
