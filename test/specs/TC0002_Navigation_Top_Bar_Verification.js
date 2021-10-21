@@ -85,7 +85,7 @@ describe('TC0002 - Navigation Top Bar Verification', () => {
 		await aMillionMorePage.acceptCookiesIfDisplayed();
 	});
 	
-	it.skip('2.1 should show top navigation bar and elements', async () => {
+	it('2.1 should show top navigation bar and elements', async () => {
 		await expect(aMillionMorePage.navBar).toBeExisting();
 		await expect(aMillionMorePage.navBarHomeBtn).toBeDisplayed();
 		await expect(aMillionMorePage.navBarHomeBtn).toHaveAttribute('href', navBarHomeBtnHrefAttribute);
@@ -120,7 +120,7 @@ describe('TC0002 - Navigation Top Bar Verification', () => {
 		await aMillionMorePage.closeCarsContainer();
 	});
 	
-	it.skip('2.3 should show and verify the side nav container when side nav button is clicked', async () => {
+	it('2.3 should show and verify the side nav container when side nav button is clicked', async () => {
 		await aMillionMorePage.openSideNavContainer();
 		await expect(aMillionMorePage.navBarSideNavigationContainer).toBeExisting();
 		await aMillionMorePage.closeSideNavContainer();
