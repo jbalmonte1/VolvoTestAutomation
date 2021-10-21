@@ -1,48 +1,35 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "2.1 should show top navigation bar and elements",
-    "uid" : "3578fcff180af486",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1634796995053,
-      "stop" : 1634796995053,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "0-0",
     "children" : [ {
-      "name" : "2.2 should show and verify the cars container when Our Cars text is clicked",
-      "uid" : "7c86db15c1738b7b",
+      "name" : "1.2 should show the cookies container and accept all cookies",
+      "uid" : "7977813555355139",
       "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
       "status" : "passed",
       "time" : {
-        "start" : 1634796995053,
-        "stop" : 1634797025008,
-        "duration" : 29955
+        "start" : 1634801223546,
+        "stop" : 1634801225025,
+        "duration" : 1479
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-94.0.4606.81" ]
+    }, {
+      "name" : "1.1 should verify url and title",
+      "uid" : "c347877470f62ce6",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634801218659,
+        "stop" : 1634801223545,
+        "duration" : 4886
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome-94.0.4606.81" ]
     } ],
     "uid" : "516fe00eea05ad99e936fa729b55eff4"
-  }, {
-    "name" : "2.3 should show and verify the side nav container when side nav button is clicked",
-    "uid" : "8c6022d3498d0f89",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1634797025009,
-      "stop" : 1634797025009,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
   } ],
   "name" : "timeline"
 }

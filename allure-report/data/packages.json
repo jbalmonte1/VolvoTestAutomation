@@ -1,48 +1,35 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : "TC0002 - Navigation Top Bar Verification",
+    "name" : "TC0001 - Main Page Loading and Cookie Container Verification",
     "children" : [ {
-      "name" : "2.2 should show and verify the cars container when Our Cars text is clicked",
-      "uid" : "7c86db15c1738b7b",
-      "parentUid" : "ab9f14998c7a790e623b2d611bed9c6f",
+      "name" : "1.1 should verify url and title",
+      "uid" : "c347877470f62ce6",
+      "parentUid" : "d35929fd665a615c8d27787fdf992938",
       "status" : "passed",
       "time" : {
-        "start" : 1634796995053,
-        "stop" : 1634797025008,
-        "duration" : 29955
+        "start" : 1634801218659,
+        "stop" : 1634801223545,
+        "duration" : 4886
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome-94.0.4606.81" ]
     }, {
-      "name" : "2.1 should show top navigation bar and elements",
-      "uid" : "3578fcff180af486",
-      "parentUid" : "ab9f14998c7a790e623b2d611bed9c6f",
-      "status" : "skipped",
+      "name" : "1.2 should show the cookies container and accept all cookies",
+      "uid" : "7977813555355139",
+      "parentUid" : "d35929fd665a615c8d27787fdf992938",
+      "status" : "passed",
       "time" : {
-        "start" : 1634796995053,
-        "stop" : 1634796995053,
-        "duration" : 0
+        "start" : 1634801223546,
+        "stop" : 1634801225025,
+        "duration" : 1479
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "2.3 should show and verify the side nav container when side nav button is clicked",
-      "uid" : "8c6022d3498d0f89",
-      "parentUid" : "ab9f14998c7a790e623b2d611bed9c6f",
-      "status" : "skipped",
-      "time" : {
-        "start" : 1634797025009,
-        "stop" : 1634797025009,
-        "duration" : 0
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
+      "parameters" : [ "chrome-94.0.4606.81" ]
     } ],
-    "uid" : "ab9f14998c7a790e623b2d611bed9c6f"
+    "uid" : "d35929fd665a615c8d27787fdf992938"
   } ],
   "name" : "packages"
 }

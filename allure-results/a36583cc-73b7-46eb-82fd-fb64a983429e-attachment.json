@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div[@data-autoid=\"nav:carMenuDesktop\"]//button[1]/p"
-}

@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//em[@data-testid=\"nav:carsLabelContainer\"]"
-}
