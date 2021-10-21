@@ -100,10 +100,10 @@ This framework contains configuration files, page objects, test data, test cases
       4. should show and verify the product list carousel recharge button
       5. should show and verify the product list carousel mild hybrid cars button
    10. TC0010 - Main Page Element Verification - Disclaimer
-      1. should show and verify the disclaimer text and description
+       1. should show and verify the disclaimer text and description
    11. TC0011 - Main Page Element Verification - Site Footer
-      1. should show and verify the site footer text and hyperlinks
-      2. should show and verify the site footer copyright
+       1. should show and verify the site footer text and hyperlinks
+       2. should show and verify the site footer copyright
    
 ---
 
