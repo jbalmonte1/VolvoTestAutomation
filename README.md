@@ -62,7 +62,7 @@ This framework contains configuration files, page objects, test data, test cases
    1. Install Chrome browser
    2. Install node.js
    3. Checkout test automation repository from Github
-   4. Install other dependencies as specified in packages.json
+   4. Create docker image (see [Building Docker Image Using Dockerfile](#building-docker-image-using-dockerfile)) and/or if running locally, install other packages/dependencies as defined in packages.json
 
 ---
 
@@ -129,7 +129,7 @@ This framework contains configuration files, page objects, test data, test cases
    bash run.sh <Test Case ID/Name | if left empty will run all test cases>
    example: bash run.sh TC0001
 ```
-   2. Using docker image generated (see #building-docker-image-using-dockerfile)
+   2. Using docker image generated (see [Building Docker Image Using Dockerfile](#building-docker-image-using-dockerfile))
 ```
    docker run -it <docker image name>:<version number> <Test Case ID/Name | if left empty will run all test cases>
    example: docker run -it volvotestautomation:v2.0 TC0001
