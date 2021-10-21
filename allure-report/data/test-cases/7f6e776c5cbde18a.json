@@ -1,0 +1,152 @@
+{
+  "uid" : "7f6e776c5cbde18a",
+  "name" : "1.1 should verify url and title",
+  "fullName" : "TC0001 - Main Page Loading and Cookie Container Verification.1.1 should verify url and title",
+  "historyId" : "200b6a15b95688318dc69f5115d6d80a",
+  "time" : {
+    "start" : 1634824241713,
+    "stop" : 1634824258144,
+    "duration" : 16431
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1634824241732,
+        "stop" : 1634824255706,
+        "duration" : 13974
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1a0bb2281b21a4e1",
+        "name" : "Request",
+        "source" : "1a0bb2281b21a4e1.json",
+        "type" : "application/json",
+        "size" : 73
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/window/maximize",
+      "time" : {
+        "start" : 1634824255708,
+        "stop" : 1634824257843,
+        "duration" : 2135
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/url",
+        "time" : {
+          "start" : 1634824255793,
+          "stop" : 1634824257611,
+          "duration" : 1818
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "c6cb96b5011b10d8",
+          "name" : "Response",
+          "source" : "c6cb96b5011b10d8.json",
+          "type" : "application/json",
+          "size" : 57
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "4a6266609adfb3e2",
+        "name" : "Response",
+        "source" : "4a6266609adfb3e2.json",
+        "type" : "application/json",
+        "size" : 60
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/title",
+      "time" : {
+        "start" : 1634824257845,
+        "stop" : 1634824258143,
+        "duration" : 298
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "52243f7992b2809b",
+        "name" : "Response",
+        "source" : "52243f7992b2809b.json",
+        "type" : "application/json",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "TC0001 - Main Page Loading and Cookie Container Verification"
+  }, {
+    "name" : "testClass",
+    "value" : "TC0001 - Main Page Loading and Cookie Container Verification"
+  }, {
+    "name" : "testMethod",
+    "value" : "1.1 should verify url and title"
+  }, {
+    "name" : "package",
+    "value" : "TC0001 - Main Page Loading and Cookie Container Verification"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.54"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7f6e776c5cbde18a.json",
+  "parameterValues" : [ "chrome-95.0.4638.54" ]
+}

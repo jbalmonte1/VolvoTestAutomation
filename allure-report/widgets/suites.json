@@ -1,8 +1,8 @@
 {
-  "total" : 1,
+  "total" : 11,
   "items" : [ {
-    "uid" : "591f3b83622450ca52000c8b85f7cc6b",
-    "name" : "TC0001 - Navigation Top Bar Verification",
+    "uid" : "c7221ce92ad529f65a37dec17da7fc11",
+    "name" : "TC0006 - Main Page Element Verification - Icon Callouts",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -10,6 +10,105 @@
       "passed" : 6,
       "unknown" : 0,
       "total" : 6
+    }
+  }, {
+    "uid" : "49b1cedf472fb30927eae87f9c69ce58",
+    "name" : "TC0009 - Main Page Element Verification - Product List Carousel",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "d376cb7ef50d3ddca1c3c3f9469a4714",
+    "name" : "TC0002 - Navigation Top Bar Verification",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "82f9390a3e53940d24985083a18ea0d4",
+    "name" : "TC0008 - Main Page Element Verification - Decades Of Innovation Section",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "8be92ff902b68efd3154c1676cc7514f",
+    "name" : "TC0001 - Main Page Loading and Cookie Container Verification",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "237d6c86cf74669a1dccec3c8bd3d274",
+    "name" : "TC0007 - Main Page Element Verification - Video Testimonials",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "8cb3c145891db1f837c5fa81ed211d1e",
+    "name" : "TC0011 - Main Page Element Verification - Site Footer",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "5a20e77a7ca41238499a3aa4987eb6c6",
+    "name" : "TC0003 - Main Page Element Verification - Model Intro",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "53ba6650f5c0204258bbf63db34637d9",
+    "name" : "TC0005 - Main Page Element Verification - Text Statement",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "e1f45a2fa1bf77dcc35fb28de5e8a225",
+    "name" : "TC0004 - Main Page Element Verification - Main Video",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

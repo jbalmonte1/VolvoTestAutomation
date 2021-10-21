@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@id=\"vcc-site-footer\"]//span[@role=\"listitem\"][2]//a"
+}
