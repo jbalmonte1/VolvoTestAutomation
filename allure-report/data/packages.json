@@ -1,87 +1,35 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : "TC0001 - Navigation Top Bar Verification",
+    "name" : "TC0011 - Main Page Element Verification - Site Footer",
     "children" : [ {
-      "name" : "should verify url and title",
-      "uid" : "1b398ba3320c57c8",
-      "parentUid" : "83984c92ec1b4afbe0a4bc75a15d082e",
+      "name" : "11.1 should show and verify the site footer text and hyperlinks",
+      "uid" : "53f9700bc7199e97",
+      "parentUid" : "f20ca1279486d08f8c05a63d2e87d38a",
       "status" : "passed",
       "time" : {
-        "start" : 1634700661890,
-        "stop" : 1634700661997,
-        "duration" : 107
+        "start" : 1634789457916,
+        "stop" : 1634789511355,
+        "duration" : 53439
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome-94.0.4606.81" ]
     }, {
-      "name" : "should show cookies container and accept all cookies",
-      "uid" : "e98492be8c944e09",
-      "parentUid" : "83984c92ec1b4afbe0a4bc75a15d082e",
+      "name" : "11.2 should show and verify the site footer copyright",
+      "uid" : "bd0d8e0dfcf74783",
+      "parentUid" : "f20ca1279486d08f8c05a63d2e87d38a",
       "status" : "passed",
       "time" : {
-        "start" : 1634700662010,
-        "stop" : 1634700662044,
-        "duration" : 34
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-94.0.4606.81" ]
-    }, {
-      "name" : "should show top navigation bar",
-      "uid" : "da3525dfc2e8941d",
-      "parentUid" : "83984c92ec1b4afbe0a4bc75a15d082e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1634700662059,
-        "stop" : 1634700662070,
-        "duration" : 11
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-94.0.4606.81" ]
-    }, {
-      "name" : "should redirect to volvocars international home page when Volvo text is clicked",
-      "uid" : "ec8a7475840e16e6",
-      "parentUid" : "83984c92ec1b4afbe0a4bc75a15d082e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1634700662072,
-        "stop" : 1634700662108,
-        "duration" : 36
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-94.0.4606.81" ]
-    }, {
-      "name" : "should show cars container when Our Cars text is clicked",
-      "uid" : "dfec1268dcb8225d",
-      "parentUid" : "83984c92ec1b4afbe0a4bc75a15d082e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1634700662120,
-        "stop" : 1634700662141,
-        "duration" : 21
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-94.0.4606.81" ]
-    }, {
-      "name" : "should show side nav container when side nav button is clicked",
-      "uid" : "93de9d307a10a0bc",
-      "parentUid" : "83984c92ec1b4afbe0a4bc75a15d082e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1634700662142,
-        "stop" : 1634700662157,
-        "duration" : 15
+        "start" : 1634789511357,
+        "stop" : 1634789512872,
+        "duration" : 1515
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome-94.0.4606.81" ]
     } ],
-    "uid" : "83984c92ec1b4afbe0a4bc75a15d082e"
+    "uid" : "f20ca1279486d08f8c05a63d2e87d38a"
   } ],
   "name" : "packages"
 }

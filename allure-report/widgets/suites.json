@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "591f3b83622450ca52000c8b85f7cc6b",
-    "name" : "TC0001 - Navigation Top Bar Verification",
+    "uid" : "8cb3c145891db1f837c5fa81ed211d1e",
+    "name" : "TC0011 - Main Page Element Verification - Site Footer",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 6
+      "total" : 2
     }
   } ]
 }
