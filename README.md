@@ -132,7 +132,7 @@ This framework contains configuration files, page objects, test data, test cases
    2. Using docker image generated (see #building-docker-image-using-dockerfile)
 ```
    docker run -it <docker image name>:<version number> <Test Case ID/Name | if left empty will run all test cases>
-   example: docker run -it volvotestautomation:v1.7 TC0001
+   example: docker run -it volvotestautomation:v2.0 TC0001
 ```   
    
 ---

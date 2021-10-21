@@ -54,7 +54,7 @@ exports.config = {
         browserName: 'chrome',
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
-        	args: ['--no-sandbox', '--disable-dev-shm-usage', '--headless', '--start-maximized', '--window-size=1920x1080]
+        	args: ['--no-sandbox', '--disable-dev-shm-usage', '--headless', '--start-maximized', '--window-size=1920x1080']
         }
     }],
     /*{
