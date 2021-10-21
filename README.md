@@ -7,7 +7,7 @@ Test automation framework infrastructure for running automated tests in Volvo We
 
 ## Table of Contents
 - [Description](#description)
-- [Feature and Content](#feature-and-content)
+- [Features and Content](#features-and-content)
 - [Directory Structure](#directory-structure)
 - [Installation Requirements](#installation-requirements)
 - [Installation](#installation)
