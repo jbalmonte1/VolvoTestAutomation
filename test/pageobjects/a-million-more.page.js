@@ -7,6 +7,7 @@ class aMillionMorePage extends Page {
     /**
      * These keywords return selectors for the cookies container
      */
+    get cookiesContainer () { return $('//div[contains(@class, "optanon-alert-box-wrapper")][contains(@style, "display: none;")]'); }
     get cookiesContainerLogo () { return $('//div[@class="optanon-alert-box-logo"]'); }
     get cookiesContainerBody () { return $('//div[@class="optanon-alert-box-body"]//p[@id="alert-box-message"]'); }
     get cookiesContainerAcceptCookiesBtn () { return $('//button[@title="Accept"]'); }
@@ -16,7 +17,9 @@ class aMillionMorePage extends Page {
      * These keywords return selectors for the top navigation bar container
      */
     get navBar () { return $('//div[@id="site-nav-topbar-wrapper"]'); }
-    get navBarHomeBtn () { return $('//a[@href="https://www.volvocars.com/intl"]'); }
+    get navBarHomeBtn () { return $('//div[@id="site-nav-topbar-wrapper"]//a'); }
+    get navBarHomeBtnImg () { return $('//div[@id="site-nav-topbar-wrapper"]//img'); }
+    
     get navBarCarsContainerBtn () { return $('//em[@data-testid="nav:carsLabelContainer"]'); }
     get navBarSideNavBtn () { return $('//button[@id="sitenav-sidenav-toggle"]'); }
     
@@ -24,6 +27,13 @@ class aMillionMorePage extends Page {
      * These keywords return selectors for the cars menu desktop container
      */
     get navBarCarsContainerCarsMenuDesktopContainer () { return $('//div[@data-autoid="nav:carMenuDesktop"][@aria-hidden="false"]'); }
+    
+    get navBarCarsContainerCarsMenuDesktopSideButton () { return '//div[@data-autoid="nav:carMenuDesktop"]//button[__INDEX__]'; }
+    get navBarCarsContainerCarsMenuDesktopSideButtonHeader () { return '//div[@data-autoid="nav:carMenuDesktop"]//button[__INDEX__]/h2'; }
+    get navBarCarsContainerCarsMenuDesktopSideButtonDescription () { return '//div[@data-autoid="nav:carMenuDesktop"]//button[__INDEX__]/p'; }
+    
+    get navBarCarsContainerCarsMenuDesktopCarsListItemBtn () { return '//div[@data-autoid="nav:carMenuDesktop"]//div[@role="tabpanel"][__INDEX_1__]//div[@role="listitem"][__INDEX_2__]//a'; }
+    get navBarCarsContainerCarsMenuDesktopCarsListItemImg () { return '//div[@data-autoid="nav:carMenuDesktop"]//div[@role="tabpanel"][__INDEX_1__]//div[@role="listitem"][__INDEX_2__]//img'; }
     
     /**
      * These keywords return selectors for the side navigation container
@@ -82,33 +92,12 @@ class aMillionMorePage extends Page {
     get mainBodyVideoTestimonialsHeader () { return $('//div[@data-component="VideoTestimonials"]//h2'); }
     get mainBodyVideoTestimonialsDescription () { return $('//div[@data-component="VideoTestimonials"]//h2/following-sibling::p'); }
     
-    get mainBodyVideoTestimonialsAmyContainer () { return $('//div[@data-autoid="videoTestimonials:container"][1]'); }
-    get mainBodyVideoTestimonialsAmyVideo () { return $('//div[@data-autoid="videoTestimonials:container"][1]//video'); }
-    get mainBodyVideoTestimonialsAmyVideoSrc () { return $('//div[@data-autoid="videoTestimonials:container"][1]//video/source'); }
-    get mainBodyVideoTestimonialsAmyVideoPlayBtn () { return $('//div[@data-autoid="videoTestimonials:container"][1]//button'); }
-    get mainBodyVideoTestimonialsAmyTitle () { return $('//div[@data-autoid="videoTestimonials:container"][1]//em'); }
-    get mainBodyVideoTestimonialsAmyDescription () { return $('//div[@data-autoid="videoTestimonials:container"][1]//p'); }
-    
-    get mainBodyVideoTestimonialsSummerContainer () { return $('//div[@data-autoid="videoTestimonials:container"][2]'); }
-    get mainBodyVideoTestimonialsSummerVideo () { return $('//div[@data-autoid="videoTestimonials:container"][2]//video'); }
-    get mainBodyVideoTestimonialsSummerVideoSrc () { return $('//div[@data-autoid="videoTestimonials:container"][2]//video/source'); }
-    get mainBodyVideoTestimonialsSummerVideoPlayBtn () { return $('//div[@data-autoid="videoTestimonials:container"][2]//button'); }
-    get mainBodyVideoTestimonialsSummerTitle () { return $('//div[@data-autoid="videoTestimonials:container"][2]//em'); }
-    get mainBodyVideoTestimonialsSummerDescription () { return $('//div[@data-autoid="videoTestimonials:container"][2]//p'); }
-    
-    get mainBodyVideoTestimonialsLindaAndMollyContainer () { return $('//div[@data-autoid="videoTestimonials:container"][3]'); }
-    get mainBodyVideoTestimonialsLindaAndMollyVideo () { return $('//div[@data-autoid="videoTestimonials:container"][3]//video'); }
-    get mainBodyVideoTestimonialsLindaAndMollyVideoSrc () { return $('//div[@data-autoid="videoTestimonials:container"][3]//video/source'); }
-    get mainBodyVideoTestimonialsLindaAndMollyVideoPlayBtn () { return $('//div[@data-autoid="videoTestimonials:container"][3]//button'); }
-    get mainBodyVideoTestimonialsLindaAndMollyTitle () { return $('//div[@data-autoid="videoTestimonials:container"][3]//em'); }
-    get mainBodyVideoTestimonialsLindaAndMollyDescription () { return $('//div[@data-autoid="videoTestimonials:container"][3]//p'); }
-    
-    get mainBodyVideoTestimonialsAlexContainer () { return $('//div[@data-autoid="videoTestimonials:container"][4]'); }
-    get mainBodyVideoTestimonialsAlexVideo () { return $('//div[@data-autoid="videoTestimonials:container"][4]//video'); }
-    get mainBodyVideoTestimonialsAlexVideoSrc () { return $('//div[@data-autoid="videoTestimonials:container"][4]//video/source'); }
-    get mainBodyVideoTestimonialsAlexVideoPlayBtn () { return $('//div[@data-autoid="videoTestimonials:container"][4]//button'); }
-    get mainBodyVideoTestimonialsAlexTitle () { return $('//div[@data-autoid="videoTestimonials:container"][4]//em'); }
-    get mainBodyVideoTestimonialsAlexDescription () { return $('//div[@data-autoid="videoTestimonials:container"][4]//p'); }
+    get mainBodyVideoTestimonialsItemContainer () { return '//div[@data-autoid="videoTestimonials:container"][__INDEX__]'; }
+    get mainBodyVideoTestimonialsItemVideo () { return '//div[@data-autoid="videoTestimonials:container"][__INDEX__]//video'; }
+    get mainBodyVideoTestimonialsItemVideoSrc () { return '//div[@data-autoid="videoTestimonials:container"][__INDEX__]//video/source'; }
+    get mainBodyVideoTestimonialsItemVideoPlayBtn () { return '//div[@data-autoid="videoTestimonials:container"][__INDEX__]//button'; }
+    get mainBodyVideoTestimonialsItemTitle () { return '//div[@data-autoid="videoTestimonials:container"][__INDEX__]//em'; }
+    get mainBodyVideoTestimonialsItemDescription () { return '//div[@data-autoid="videoTestimonials:container"][__INDEX__]//p'; }
 
     /**
      * These keywords return selectors for the decades of innovation section
@@ -156,6 +145,7 @@ class aMillionMorePage extends Page {
      * This keyword is used to accept all cookies when initially navigating to page
      */
     async acceptAllCookies () {
+    	await this.cookiesContainerAcceptCookiesBtn.isDisplayed();
         await this.cookiesContainerAcceptCookiesBtn.click();
     }
     
@@ -163,41 +153,80 @@ class aMillionMorePage extends Page {
      * This keyword is used to open cookie settings menu
      */
     async openCookieSettings () {
+        await this.cookiesContainerCookieSettingsBtn.isDisplayed();
         await this.cookiesContainerCookieSettingsBtn.click();
+    }
+    
+    /*
+     * This keyword is used to navigate to home page
+     */
+    async navigateToHomePage () {
+    	await this.navBarHomeBtn.isDisplayed();
+    	await this.navBarHomeBtn.click();
     }
     
     /**
      * This keyword is used to open cars container and view the list of cars
      */
     async openCarsContainer () {
-        await this.navBarCarsContainerBtn.click();
+    	await this.navBarCarsContainerBtn.isDisplayed();
+    	await this.navBarCarsContainerBtn.click();
+    }
+    
+    /**
+     * This keyword is used to navigate to a specific cars menu from cars menu desktop side panel
+     * @param selector to click to go to a cars menu
+     */
+    async viewCarsContainerFromCarsMenuDesktopSidePanel (selector) {
+    	await selector.isDisplayed();
+    	await selector.click();
     }
     
     /**
      * This keyword is used to close cars container
      */
     async closeCarsContainer () {
-        await this.navBarCarsContainerBtn.click();
+    	await this.navBarCarsContainerBtn.isDisplayed();
+    	await this.navBarCarsContainerBtn.click();
     }
     
     /**
      * This keyword is used to open side nav container
      */
     async openSideNavContainer () {
-        await this.navBarSideNavBtn.click();
+    	await this.navBarSideNavBtn.isDisplayed();
+    	await this.navBarSideNavBtn.click();
     }
     
     /**
      * This keyword is used to close side nav container
      */
     async closeSideNavContainer () {
+        await this.navBarSideNavCloseBtn.isDisplayed();
         await this.navBarSideNavCloseBtn.click();
+    }
+    
+    /**
+     * This keyword is used to navigate to car safety page after clicking Learn More About Car Safety text
+     */
+    async navigateToCarSafetyPage () {
+        await this.mainBodyIconCalloutsLearnMoreAboutCarSafetyTitle.isDisplayed();
+        await this.mainBodyIconCalloutsLearnMoreAboutCarSafetyTitle.click();
+    }
+    
+    /**
+     * This keyword is used to navigate to safety heritage page after clicking Learn More text under Decades of Innovation
+     */
+    async navigateToSafetyHeritagePage () {
+        await this.mainBodyDecadesOfInnovationSectionLearnMoreBtn.isDisplayed();
+        await this.mainBodyDecadesOfInnovationSectionLearnMoreBtn.click();
     }
     
     /**
      * This keyword is used to view the previous item in the product carousel
      */
     async viewPreviousItemInProductCarousel () {
+    	await this.mainBodyProductListCarouselPreviousBtn.isDisplayed();
     	await this.mainBodyProductListCarouselPreviousBtn.click();
     }
     
@@ -205,7 +234,73 @@ class aMillionMorePage extends Page {
      * This keyword is used to view the next item in the product carousel
      */
     async viewNextItemInProductCarousel () {
+    	await this.mainBodyProductListCarouselNextBtn.isDisplayed();
     	await this.mainBodyProductListCarouselNextBtn.click();
+    }
+    
+    /*
+     * This keyword is used to navigate to recharge page after clicking Recharge button
+     */
+    async navigateToRechargePage () {
+    	await this.mainBodyProductListCarouselRechargeBtn.isDisplayed();
+    	await this.mainBodyProductListCarouselRechargeBtn.click();
+    }
+    
+    /*
+     * This keyword is used to navigate to mild hybrid cars page after clicking Mild Hybrid Cars button
+     */
+    async navigateToMildHybridCarsPage () {
+    	await this.mainBodyProductListCarouselMildHybridCarsBtn.isDisplayed();
+    	await this.mainBodyProductListCarouselMildHybridCarsBtn.click();
+    }
+    
+    /*
+     * This keyword is used to navigate to view car page after clicking the car image or learn button in product carousel
+     * @param selector to click to go to view car page
+     */
+    async navigateToViewCarPage (selector) {
+    	await selector.isDisplayed();
+    	await selector.click();
+    }
+    
+    /*
+     * This keyword is used to navigate to shop car page after clicking the shop button in product carousel
+     * @param selector to click to go to shop car page
+     */
+    async navigateToShopCarPage (selector) {
+    	await selector.isDisplayed();
+    	await selector.click();
+    }
+    
+    /*
+     * This keyword is used to seek out a specific product carousel item
+     * @param number of times the next page is expected to be clicked for the item to be visible
+     */
+    async seekItemInProductCarousel (value) {
+    	for (let i = 1; i <= value; i++) {
+    		await this.viewNextItemInProductCarousel();
+    	}
+    }
+    
+    /*
+     * This keyword is used to navigate to a specific site footer page
+     * @param selector to click to go to a site footer page
+     */
+    async navigateToSiteFooterPage (selector) {
+    	await selector.isDisplayed();
+    	await selector.click();
+    }
+    
+    /**
+     * This keyword is used as a handler for accepting cookies should it persist in the page on new test case
+     */
+    async acceptCookiesIfDisplayed () {
+    	try {
+		await this.acceptAllCookies();
+	} 
+	catch (err) {
+		console.log('Cookies already accepted.');
+	}
     }
     
     /**
