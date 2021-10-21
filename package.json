@@ -1,13 +1,13 @@
 {
   "name": "VolvoTestAutomation",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This project is used to automate user actions and verify UI elements and behavior in Volvo Internationals page",
   "devDependencies": {
-    "@wdio/allure-reporter": "^7.14.1",
+    "@wdio/allure-reporter": "^7.16.0",
     "@wdio/cli": "^7.14.1",
     "@wdio/local-runner": "^7.14.1",
     "@wdio/mocha-framework": "^7.14.1",
-    "@wdio/selenium-standalone-service": "^7.14.1",
+    "@wdio/selenium-standalone-service": "^7.16.0",
     "@wdio/spec-reporter": "^7.14.1",
     "chromedriver": "^94.0.0",
     "wdio-chromedriver-service": "^7.2.2"
@@ -16,5 +16,8 @@
     "type": "git",
     "url": "https://github.com/jbalmonte1/VolvoTestAutomation.git"
   },
-  "author": "Jason Almonte"
+  "author": "Jason Almonte",
+  "dependencies": {
+    "npm": "^8.1.0"
+  }
 }

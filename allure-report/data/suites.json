@@ -4,32 +4,153 @@
     "name" : "TC0001 - Main Page Loading and Cookie Container Verification",
     "children" : [ {
       "name" : "1.1 should verify url and title",
-      "uid" : "c347877470f62ce6",
+      "uid" : "446e0023a66c6dee",
       "parentUid" : "8be92ff902b68efd3154c1676cc7514f",
       "status" : "passed",
       "time" : {
-        "start" : 1634801218659,
-        "stop" : 1634801223545,
-        "duration" : 4886
+        "start" : 1634814544410,
+        "stop" : 1634814549352,
+        "duration" : 4942
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "chrome-94.0.4606.81" ]
+      "parameters" : [ "chrome-95.0.4638.54" ]
     }, {
       "name" : "1.2 should show the cookies container and accept all cookies",
-      "uid" : "7977813555355139",
+      "uid" : "f9a7147ec67113d9",
       "parentUid" : "8be92ff902b68efd3154c1676cc7514f",
       "status" : "passed",
       "time" : {
-        "start" : 1634801223546,
-        "stop" : 1634801225025,
-        "duration" : 1479
+        "start" : 1634814549353,
+        "stop" : 1634814552302,
+        "duration" : 2949
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "chrome-94.0.4606.81" ]
+      "parameters" : [ "chrome-95.0.4638.54" ]
     } ],
     "uid" : "8be92ff902b68efd3154c1676cc7514f"
+  }, {
+    "name" : "TC0009 - Main Page Element Verification - Product List Carousel",
+    "children" : [ {
+      "name" : "9.1 should show and verify the product list carousel header",
+      "uid" : "38c7404bb8faa60a",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1634818407926,
+        "stop" : 1634818407926,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9.3 should show and verify the product list carousel items",
+      "uid" : "1806dd7e89363def",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634818415482,
+        "stop" : 1634819041640,
+        "duration" : 626158
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "9.4 should show and verify the product list carousel recharge button",
+      "uid" : "7dbc602e83c3e03c",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1634819041641,
+        "stop" : 1634819041641,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9.5 should show and verify the product list carousel mild hybrid cars button",
+      "uid" : "43af65cecd948462",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1634819041642,
+        "stop" : 1634819041642,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9.1 should show and verify the product list carousel header",
+      "uid" : "51373bf1b82ef780",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634819111730,
+        "stop" : 1634819118199,
+        "duration" : 6469
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "9.2 should show and verify the product list carousel pagination buttons",
+      "uid" : "31e13f786252986c",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634819118199,
+        "stop" : 1634819132380,
+        "duration" : 14181
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "9.3 should show and verify the product list carousel items",
+      "uid" : "92c2a979dd032930",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1634819132381,
+        "stop" : 1634819132381,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9.4 should show and verify the product list carousel recharge button",
+      "uid" : "b952bbee6fb4adf9",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634819132381,
+        "stop" : 1634819137033,
+        "duration" : 4652
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "9.5 should show and verify the product list carousel mild hybrid cars button",
+      "uid" : "e210796f9363366a",
+      "parentUid" : "49b1cedf472fb30927eae87f9c69ce58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634819137034,
+        "stop" : 1634819158480,
+        "duration" : 21446
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    } ],
+    "uid" : "49b1cedf472fb30927eae87f9c69ce58"
   } ],
   "name" : "suites"
 }

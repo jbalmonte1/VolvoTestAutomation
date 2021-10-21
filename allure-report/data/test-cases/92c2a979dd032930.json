@@ -1,0 +1,48 @@
+{
+  "uid" : "92c2a979dd032930",
+  "name" : "9.3 should show and verify the product list carousel items",
+  "fullName" : "TC0009 - Main Page Element Verification - Product List Carousel.9.3 should show and verify the product list carousel items",
+  "historyId" : "a2e95709048c24c8c62027936447e2b3",
+  "time" : {
+    "start" : 1634819132381,
+    "stop" : 1634819132381,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TC0009 - Main Page Element Verification - Product List Carousel"
+  }, {
+    "name" : "testClass",
+    "value" : "TC0009 - Main Page Element Verification - Product List Carousel"
+  }, {
+    "name" : "testMethod",
+    "value" : "9.3 should show and verify the product list carousel items"
+  }, {
+    "name" : "package",
+    "value" : "TC0009 - Main Page Element Verification - Product List Carousel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "92c2a979dd032930.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,57 @@
+{
+  "uid" : "38c7404bb8faa60a",
+  "name" : "9.1 should show and verify the product list carousel header",
+  "fullName" : "TC0009 - Main Page Element Verification - Product List Carousel.9.1 should show and verify the product list carousel header",
+  "historyId" : "fe28edf336c5310af34155df809e6f26",
+  "time" : {
+    "start" : 1634818407926,
+    "stop" : 1634818407926,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TC0009 - Main Page Element Verification - Product List Carousel"
+  }, {
+    "name" : "testClass",
+    "value" : "TC0009 - Main Page Element Verification - Product List Carousel"
+  }, {
+    "name" : "testMethod",
+    "value" : "9.1 should show and verify the product list carousel header"
+  }, {
+    "name" : "package",
+    "value" : "TC0009 - Main Page Element Verification - Product List Carousel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6c0139a12aff4b00",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1634818017804,
+        "stop" : 1634818017804,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "38c7404bb8faa60a.json",
+  "parameterValues" : [ ]
+}

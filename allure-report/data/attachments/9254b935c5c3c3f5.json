@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@data-component=\"ProductListCarousel\"]//a[@data-autoid=\"productListCarouselItem-6\"]//img"
+}

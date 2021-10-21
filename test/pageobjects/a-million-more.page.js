@@ -278,7 +278,12 @@ class aMillionMorePage extends Page {
      */
     async seekItemInProductCarousel (value) {
     	for (let i = 1; i <= value; i++) {
-    		await this.viewNextItemInProductCarousel();
+    		try {
+	    		await this.viewNextItemInProductCarousel();
+    		}
+    		catch (err) {
+    			console.log('No new next item.');
+    		}
     	}
     }
     

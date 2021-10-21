@@ -1,21 +1,111 @@
 [ {
-  "uid" : "7977813555355139",
-  "name" : "1.2 should show the cookies container and accept all cookies",
+  "uid" : "31e13f786252986c",
+  "name" : "9.2 should show and verify the product list carousel pagination buttons",
   "time" : {
-    "start" : 1634801223546,
-    "stop" : 1634801225025,
-    "duration" : 1479
+    "start" : 1634819118199,
+    "stop" : 1634819132380,
+    "duration" : 14181
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c347877470f62ce6",
-  "name" : "1.1 should verify url and title",
+  "uid" : "43af65cecd948462",
+  "name" : "9.5 should show and verify the product list carousel mild hybrid cars button",
   "time" : {
-    "start" : 1634801218659,
-    "stop" : 1634801223545,
-    "duration" : 4886
+    "start" : 1634819041642,
+    "stop" : 1634819041642,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f9a7147ec67113d9",
+  "name" : "1.2 should show the cookies container and accept all cookies",
+  "time" : {
+    "start" : 1634814549353,
+    "stop" : 1634814552302,
+    "duration" : 2949
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b952bbee6fb4adf9",
+  "name" : "9.4 should show and verify the product list carousel recharge button",
+  "time" : {
+    "start" : 1634819132381,
+    "stop" : 1634819137033,
+    "duration" : 4652
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7dbc602e83c3e03c",
+  "name" : "9.4 should show and verify the product list carousel recharge button",
+  "time" : {
+    "start" : 1634819041641,
+    "stop" : 1634819041641,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e210796f9363366a",
+  "name" : "9.5 should show and verify the product list carousel mild hybrid cars button",
+  "time" : {
+    "start" : 1634819137034,
+    "stop" : 1634819158480,
+    "duration" : 21446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38c7404bb8faa60a",
+  "name" : "9.1 should show and verify the product list carousel header",
+  "time" : {
+    "start" : 1634818407926,
+    "stop" : 1634818407926,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "446e0023a66c6dee",
+  "name" : "1.1 should verify url and title",
+  "time" : {
+    "start" : 1634814544410,
+    "stop" : 1634814549352,
+    "duration" : 4942
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1806dd7e89363def",
+  "name" : "9.3 should show and verify the product list carousel items",
+  "time" : {
+    "start" : 1634818415482,
+    "stop" : 1634819041640,
+    "duration" : 626158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51373bf1b82ef780",
+  "name" : "9.1 should show and verify the product list carousel header",
+  "time" : {
+    "start" : 1634819111730,
+    "stop" : 1634819118199,
+    "duration" : 6469
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92c2a979dd032930",
+  "name" : "9.3 should show and verify the product list carousel items",
+  "time" : {
+    "start" : 1634819132381,
+    "stop" : 1634819132381,
+    "duration" : 0
+  },
+  "status" : "skipped",
   "severity" : "normal"
 } ]

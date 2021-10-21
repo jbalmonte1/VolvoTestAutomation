@@ -54,7 +54,7 @@ exports.config = {
         browserName: 'chrome',
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
-        	args: ['--no-sandbox', '--disable-dev-shm-usage', '--headless']
+        	args: ['--no-sandbox', '--disable-dev-shm-usage', '--headless', '--start-maximized', '--window-size=1920x1080]
         }
     }],
     /*{
@@ -95,7 +95,7 @@ exports.config = {
     baseUrl: 'https://www.volvocars.com',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 30000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response

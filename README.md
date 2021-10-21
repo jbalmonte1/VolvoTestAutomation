@@ -12,6 +12,7 @@ Test automation framework infrastructure for running automated tests in Volvo We
 - [Installation Requirements](#installation-requirements)
 - [Installation](#installation)
 - [Test Case List](#test-case-list)
+- [Building Docker Image Using Dockerfile](#building-docker-image-using-dockerfile)
 - [Test Case Execution](#test-case-execution)
 
 ---
@@ -23,10 +24,10 @@ This framework contains configuration files, page objects, test data, test cases
 
 ## Features and Content
    1. Page-object model structure for improved code reusability, readability, and maintenance
-   2. Cross-browser testing (Chrome and Firefox)
-   3. Parallel execution
-   4. Single step test execution
-   5. Allure report autogeneration and display
+   2. Parallel execution
+   3. Single step test execution
+   4. Allure report autogeneration and display
+   5. Ready support for cross-browser testing (Chrome and Firefox) (only available on non-headless mode, need to modify capabilities section of wdio.conf.js to enable)
 
 ---
 
@@ -103,15 +104,28 @@ This framework contains configuration files, page objects, test data, test cases
    11. TC0011 - Main Page Element Verification - Site Footer
       1. should show and verify the site footer text and hyperlinks
       2. should show and verify the site footer copyright
-      
+   
+---
+
+## Building Docker Image Using Dockerfile
+   1. Make sure docker is installed and running (systemctl status docker)
+   2. From the Project Directory
+   >  docker build -t <docker image name>:<version number> .
+   >  example: docker build -t volvotestautomation:v2.0 .
+   3. Check new image generated
+   >  docker images <docker image name>:<version number>
+   >  example: docker images volvotestautomation:v2.0
 ---
 
 ## Test Case Execution
-   1. From the Project Directory
-```
-   bash run.sh <Test Case ID/Name | if left empty will run all test cases>
-   example: bash run.sh TC0001
-```
+   1. Using shell script from Project Directory
+   >  bash run.sh <Test Case ID/Name | if left empty will run all test cases>
+   >  example: bash run.sh TC0001
+   2. Using docker image generated (see #building-docker-image-using-dockerfile)
+   >  docker run -it <docker image name>:<version number> <Test Case ID/Name | if left empty will run all test cases>
+   >  example: docker run -it volvotestautomation:v1.7 TC0001
+
+---
 
 For more details Please see:
 - [WebdriverIO](https://webdriver.io/)

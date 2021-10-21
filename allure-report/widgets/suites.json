@@ -1,6 +1,17 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
+    "uid" : "49b1cedf472fb30927eae87f9c69ce58",
+    "name" : "TC0009 - Main Page Element Verification - Product List Carousel",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 4,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
     "uid" : "8be92ff902b68efd3154c1676cc7514f",
     "name" : "TC0001 - Main Page Loading and Cookie Container Verification",
     "statistic" : {
