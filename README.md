@@ -14,7 +14,7 @@ Test automation framework infrastructure for running automated tests in Volvo We
 - [Test Case List](#test-case-list)
 - [Building Docker Image Using Dockerfile](#building-docker-image-using-dockerfile)
 - [Test Case Execution](#test-case-execution)
-- [Test Reporting](test-reporting)
+- [Test Reporting](#test-reporting)
 
 ---
 
