@@ -2,8 +2,8 @@
 
 if [ -d "allure-results" ]
 then
-	rm -rfv allure-results
+	rm -rf allure-results/*
 fi
-npx wdio wdio.conf.js --spec './test/specs/**/'${1}'*.js'
+npx wdio wdio.conf.js --spec './test/specs/'${1}'*.js'
 allure generate allure-results --clean
 allure open
